@@ -32,7 +32,7 @@
         "type": "text",
         "required": true,
         "text": "Seu nome:",
-        "destination_column": "text_mksdvk9t",
+        "destination_column": "text_mkswbqbp",
         "is_conditional": false,
         "source": "manual"
       },
@@ -41,7 +41,7 @@
         "type": "text",
         "required": true,
         "text": "Nome da sua empresa:",
-        "destination_column": "text_mksdvk9t",
+        "destination_column": "text_mkswah1t",
         "is_conditional": false,
         "source": "manual"
       },
@@ -50,7 +50,7 @@
         "type": "rating",
         "required": true,
         "text": "Como foi sua experiência com a Top Service?",
-        "destination_column": "numeric_mkrjv5re",
+        "destination_column": "numeric_mkswcfyz",
         "is_conditional": false,
         "source": "manual"
       },
@@ -59,7 +59,7 @@
         "type": "rating",
         "required": true,
         "text": "Avalie a qualidade e a criatividade da nossa proposta inicial.",
-        "destination_column": "numeric_mkrjv5re",
+        "destination_column": "numeric_mkswwx18",
         "is_conditional": false,
         "source": "manual"
       },
@@ -68,7 +68,7 @@
         "type": "yesno",
         "required": true,
         "text": "Teve material de comunicação produzido pela Top Service?",
-        "destination_column": "text_mksv78v8",
+        "destination_column": "text_mkswsey8",
         "is_conditional": false,
         "source": "manual"
       },
@@ -77,7 +77,7 @@
         "type": "rating",
         "required": true,
         "text": "Avalie a qualidade e a criatividade dos materiais de comunicação? (KV, tags, carta de boas-vindas, banners e outros...)",
-        "destination_column": "numeric_mksdw5nf",
+        "destination_column": "numeric_mksw7pb4",
         "conditional": {
           "depends_on": "matcriacao",
           "show_if": "Sim"
@@ -85,21 +85,13 @@
         "is_conditional": true,
         "source": "manual"
       },
-{
-        "id": "question_10",
-        "type": "rating",
-        "required": true,
-        "text": "Avalie a qualidade e a criatividade dos materiais de comunicação? (KV, tags, carta de boas-vindas, banners, etc)",
-        "destination_column": "numeric_mkrjv5re",
-        "is_conditional": false,
-        "source": "manual"
-      },
+
 {
         "id": "question_11",
         "type": "rating",
         "required": true,
-        "text": "Avalie o gerente de contas que acompanhou seu projeto",
-        "destination_column": "numeric_mkrjv5re",
+        "text": "Avalie o gerente de contas que acompanhou seu projeto.",
+        "destination_column": "numeric_mkswxtje",
         "is_conditional": false,
         "source": "manual"
       },
@@ -108,7 +100,7 @@
         "type": "rating",
         "required": true,
         "text": "Avalie a qualidade do nosso atendimento corporativo?",
-        "destination_column": "numeric_mkrjv5re",
+        "destination_column": "numeric_mksw2p8t",
         "is_conditional": false,
         "source": "manual"
       },
@@ -117,7 +109,7 @@
         "type": "yesno",
         "required": true,
         "text": "Na sua viagem teve RSVP? (Atendimento ao convidado)",
-        "destination_column": "text_mksv78v8",
+        "destination_column": "text_mkswgq1m",
         "is_conditional": false,
         "source": "manual"
       },
@@ -126,7 +118,7 @@
         "type": "rating",
         "required": true,
         "text": "Avalie a qualidade do RSVP (Atendimento ao convidado)",
-        "destination_column": "numeric_mksdw5nf",
+        "destination_column": "numeric_mksw7wav",
         "conditional": {
           "depends_on": "rsvp",
           "show_if": "Sim"
@@ -139,7 +131,7 @@
         "type": "yesno",
         "required": true,
         "text": "Na sua viagem teve equipe de campo da Top Service?",
-        "destination_column": "text_mksv78v8",
+        "destination_column": "text_mkswzbhc",
         "is_conditional": false,
         "source": "manual"
       },
@@ -148,7 +140,7 @@
         "type": "rating",
         "required": true,
         "text": "Avalie a qualidade da equipe de campo? (Guias Top Service)",
-        "destination_column": "numeric_mksdw5nf",
+        "destination_column": "numeric_mkswe8sf",
         "conditional": {
           "depends_on": "campo",
           "show_if": "Sim"
@@ -161,7 +153,7 @@
         "type": "yesno",
         "required": true,
         "text": "Você utilizou algum dos nossos serviços de tecnologia? (dashboard de inscrições, aplicativo de viagem ou credenciamento)",
-        "destination_column": "text_mksv78v8",
+        "destination_column": "text_mkswp6dk",
         "is_conditional": false,
         "source": "manual"
       },
@@ -169,8 +161,8 @@
         "id": "question_1444",
         "type": "rating",
         "required": true,
-        "text": "Avalie nossos serviços de tecnologia?",
-        "destination_column": "numeric_mksdw5nf",
+        "text": "Avalie nossos serviços de tecnologia.",
+        "destination_column": "numeric_mksweem",
         "conditional": {
           "depends_on": "tec",
           "show_if": "Sim"
@@ -183,17 +175,18 @@
         "type": "rating",
         "required": true,
         "text": "Qual nota você da para a viagem de uma maneira geral?",
-        "destination_column": "numeric_mkrjv5re",
+        "destination_column": "numeric_mkswarb1",
         "is_conditional": false,
         "source": "manual"
       },
   {
         "id": "client_feedback2",
         "type": "longtext",
-        "text": "Por favor deixe comentários ou sugestões que possam contribuir para nossa melhoria contínua.",
         "required": false,
-        "source": "manual",
-        "is_conditional": false
+        "text": "Por favor deixe comentários ou sugestões que possam contribuir para nossa melhoria contínua.",
+        "destination_column": "long_text_mksw2m76",
+        "is_conditional": false,
+        "source": "manual"
       }
     ]
   },
