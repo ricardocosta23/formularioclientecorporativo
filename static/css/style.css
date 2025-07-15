@@ -52,7 +52,7 @@ body {
 
 /* Form type specific background overlays */
 body.form-guias {
-    background: linear-gradient(135deg, rgba(138, 43, 226, 0.8) 0%, rgba(138, 43, 226, 0.6) 100%),
+    background: linear-gradient(135deg, rgba(90, 91, 176, 0.8) 0%, rgba(138, 43, 226, 0.6) 100%),
                 url('../images/fundo.png') center/cover no-repeat fixed;
 }
 
