@@ -625,8 +625,10 @@
             console.log('====================================');
             console.log('Found error divs:', document.querySelectorAll('.error-message').length);
 
-            // Auto-enable debug mode (remove this line in production)
-            enableDebugMode();
+            // Debug mode disabled for production
+            // enableDebugMode();
+
+            // Log initial form structure
 
             // Log initial form structure
             setTimeout(analyzeFormStructure, 1000);
