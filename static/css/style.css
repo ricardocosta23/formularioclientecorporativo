@@ -52,10 +52,9 @@ body {
 
 /* Form type specific background overlays */
 body.form-guias {
-    background: linear-gradient(135deg, rgba((30, 144, 255, 0.8) 0%, rgba((30, 144, 255, 0.6) 100%),
+    background: linear-gradient(135deg, rgba(30, 144, 255, 0.8) 0%, rgba(30, 144, 255, 0.6) 100%),
                 url('../images/fundo.png') center/cover no-repeat fixed;
 }
-
 
 body.form-clientes {
     background: linear-gradient(135deg, rgba(138, 43, 226, 0.8) 0%, rgba(138, 43, 226, 0.6) 100%),
@@ -142,6 +141,12 @@ body.form-fornecedores {
 }
 
 /* Form-specific icon colors */
+body.form-guias .icon-wrapper {
+    background: linear-gradient(135deg, 
+        rgba(30, 144, 255, 1) 0%, 
+        rgba(30, 144, 255, 0.8) 100%);
+}
+
 body.form-clientes .icon-wrapper {
     background: linear-gradient(135deg, 
         rgba(138, 43, 226, 1) 0%, 
@@ -204,6 +209,10 @@ body.form-fornecedores .icon-wrapper {
 }
 
 /* Form-specific question title colors */
+body.form-guias .question-title {
+    color: rgba(30, 144, 255, 1);
+}
+
 body.form-clientes .question-title {
     color: rgba(138, 43, 226, 1);
 }
@@ -304,6 +313,17 @@ body.form-fornecedores .question-title {
 }
 
 /* Form-specific rating circle colors */
+body.form-guias .rating-circle.selected {
+    background: linear-gradient(135deg, rgba(30, 144, 255, 1) 0%, rgba(30, 144, 255, 0.8) 100%);
+    border-color: rgba(30, 144, 255, 1);
+}
+
+body.form-guias .rating-circle:hover,
+body.form-guias .rating-circle.hover {
+    border-color: rgba(30, 144, 255, 1);
+    background: rgba(30, 144, 255, 0.1);
+}
+
 body.form-clientes .rating-circle.selected {
     background: linear-gradient(135deg, rgba(138, 43, 226, 1) 0%, rgba(138, 43, 226, 0.8) 100%);
     border-color: rgba(138, 43, 226, 1);
@@ -389,6 +409,10 @@ body.form-fornecedores .rating-circle.hover {
 }
 
 /* Form-specific button colors */
+body.form-guias .submit-button {
+    background: linear-gradient(135deg, rgba(30, 144, 255, 1) 0%, rgba(30, 144, 255, 0.8) 100%);
+}
+
 body.form-clientes .submit-button {
     background: linear-gradient(135deg, rgba(138, 43, 226, 1) 0%, rgba(138, 43, 226, 0.8) 100%);
 }
